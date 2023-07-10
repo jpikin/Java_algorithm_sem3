@@ -1,7 +1,4 @@
-import java.util.Collections;
-import java.util.List;
-
-public class LinkedList <T extends Comparable<T>> {
+public class LinkedList<T extends Comparable<T>> {
     private Node root;
     private int size;
 
@@ -147,10 +144,13 @@ public class LinkedList <T extends Comparable<T>> {
 
     public void reverse() {
 
-        while (size > 0){
-            Node lastNode = getNode(size-1);
-            System.out.print(lastNode.value + " ");
-            size--;
+        for (int i = 0, j = size - 1; i < size / 2; i++, j--) {
+            Node node1 = getNode(i);
+            Node node2 = getNode(j);
+            T temp = node1.value;
+            node1.value = node2.value;
+            node2.value = temp;
+
         }
     }
 

@@ -144,6 +144,11 @@ public class LinkedList <T extends Comparable<T>> {
         System.out.println();
     }
 
+    public void reverse() {
+
+
+    }
+
     private class Node {
         T value;
         Node next;

@@ -10,6 +10,7 @@ public class Main{
         list.add(-4);
 
         list.print();
+        list.reverse();
     }
 
 }

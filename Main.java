@@ -1,5 +1,5 @@
-public class Main{
-    public static void main(String[] arsg){
+public class Main {
+    public static void main(String[] arsg) {
 
         LinkedList list = new LinkedList();
 
@@ -11,7 +11,9 @@ public class Main{
 
         list.print();
         list.reverse();
-
+        list.print();
+        list.reverse();
+        list.print();
 
     }
 

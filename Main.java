@@ -11,6 +11,8 @@ public class Main{
 
         list.print();
         list.reverse();
+
+
     }
 
 }
